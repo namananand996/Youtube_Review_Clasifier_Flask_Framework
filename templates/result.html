@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<div class="container" style="padding-top: 10px;">
+    <div class="jumbotron" style="background-color:#FF3031">
+        <h1 style="text-align:center; color: #EAF0F1">Result</h1>
+    </div>
+
+    <div style="text-align:center;padding-top: 100px">
+        {%if prediction == 1%}
+        <h1>Review is Positive</h1>
+        {% else %}
+        <h1>Review is Negative</h1>
+        {% endif %}
+    </div>
+
+</div>
+
+
+{% endblock %}
